@@ -1,0 +1,191 @@
+SOURCE CODE:-
+Main.html:
+<html>
+<head>
+</head>
+<frameset rows="30%,70%">
+<frame name="TOP" src="top.html"/>
+<frameset cols="15%,85%">
+<frame name="LEFT" src="leŌ.html"/>
+<frame name="RIGHT" src="home.html"/>
+</frameset>
+</frameset>
+<body></body>
+</html>
+Home.html:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+border-spacing: 30px;
+}
+</style>
+</head>
+<body bgcolor="lightyellow">
+<table>
+<tr>
+<td style="border:dashed;" width="750" height="500"><center>
+<h1>Wellcome to the online books store</h1>
+</center></td>
+<td style="border:solid;" width="450" height="500">
+<form>
+
+<center>
+<img src="/Users/kalyanram/Documents/Coding/HTML/Week1/img.png" width="100"
+><br><br>
+<input type="text" name="username" placeholder="username" required><br><br><br>
+<input type="password" name="password" placeholder="password"
+required><br><br><br>
+<input type="submit" name="sign-in" value="SING-IN"><br><br><br>
+NEW USER<br><br>
+<a href="registraƟon.html" target="#"><input type="buƩon" name="create an account"
+value="CREATE AN ACCOUNT"></a>
+</center>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
+LeŌ.html:
+<html>
+<head></head>
+<body bgcolor="silver">
+<pre>
+
+COMPUTERS
+
+ELECTORNICS
+
+ELECTRICAL
+
+BIO-TECH
+</pre>
+</body>
+</html>
+
+Top.html:
+<html>
+<head></head>
+<body bgcolor="lavender">
+<img src="logo.jpeg" align="leŌ" width="150" height="150">
+<img src="logo.jpeg" align="right" width="150" height="150"><br>
+<center><h1>SREE VIDYANIKETHAN ENGINEERING COLLEGE</h1><br>
+<marquee behavior="alternate" width="500"
+bgcolor="lightblue">ONLINE BOOKS STORE</marquee></center>
+<br><br>
+<table width="100%">
+<tr align="center">
+<th><a href="home.html" target="RIGHT">HOME</a></th>
+<th><a href="home1.html" target="RIGHT">LATEST ARRIVALS</a></th>
+<th><a href="best_sellers.html" target="RIGHT">BEST SELLERS</a></th>
+<th><a href="home1.html" target="RIGHT">CONTACT US</a></th>
+<th><a href="home1.html" target="RIGHT">SEARCH</a></th>
+</tr>
+</table>
+</body>
+</html>
+Best_seller.html:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+td h1 {
+padding-leŌ: 40px;
+}
+
+td p{
+padding-leŌ: 50px
+}
+td img{
+padding-leŌ: 40px
+}
+</style>
+</head>
+<body bgcolor="lightyellow">
+<table border="1" width="100%" style="height: 560px;">
+<tr>
+<td width="20%"><img src="book1.jpeg" width="150" height="200"></td>
+<td><h1>HTML5 Black Book</h1>
+<p>Kogent Learning SoluƟons<br>
+Dreamtech Press<br>
+Rs. 570/-</p></td>
+<td width="20%"><center><a href="home1.html" target="RIGHT">MORE
+DETAILS</a><br><br><br><br>
+<a href="add_cart.html" target="RIGHT"><input type="buƩon" name="ADD CART"
+value="ADD CART"></a></center></td>
+</tr>
+<tr>
+<td width="20%"><img src="book2.jpeg" width="150" height="200"></td>
+<td><h1>Beginning PHP and MySQL</h1>
+<p>4th EdiƟon<br>
+W Jason Gilmore<br>
+Apress<br>
+Rs. 520/-</p></td>
+<td width="20%"><center><a href="home1.html" target="RIGHT">MORE
+DETAILS</a><br><br><br><br>
+<a href="add_cart.html" target="RIGHT"><input type="buƩon" name="ADD CART"
+value="ADD CART"></a></center></td>
+</tr>
+
+</table>
+</body>
+</html>
+RegistraƟon_form.html:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form{
+padding-top: 90px;
+padding-leŌ: 500px;
+padding-boƩom: 70px;
+background-color: bisque;
+}
+</style>
+</head>
+<body><fieldset>
+<form><pre>
+<img src="img.png" width="100" ><br><br>
+Name : <input type="text" name="First name" placeholder="First Name"><br>
+<input type="text" name="Last name" placeholder="Last Name"><br>
+Gender :
+<input type="radio" name="Gender" id="male">Male <input type="radio"
+name="Gender" id="female">Female <input type="radio" name="Gender" id="Others">Others<br>
+DOB : <input type="date" name="DOB"><br>
+Username : <input type="text" name="username"><br>
+password : <input type="password" name="password"><br>
+Address :
+<textarea rows="3" cols="20"></textarea><br>
+<input type="tel" name="postal code" paƩern="[0-9]{6}" placeholder="Postal
+code"><br>
+Phone no.: <input type="tel" name="number" paƩern="[0-9]{10}"><br>
+
+Email : <input type="email" name="email"><br><br>
+<input type="submit" name="submit"
+onclick="window.locaƟon.href='thank.html';" style="cursor: pointer;"> <input type="reset"
+name="reset">
+</pre></form>
+</fieldset></body>
+</html>
+Add_cart.html:
+<!DOCTYPE html>
+<html>
+<head></head>
+<body bgcolor="lightyellow"><pre>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<h1><center>BOOK IS SUCCESSFULLY ADDED TO CART.
+</center></h1>
+</pre></body>
+</html>
+
+Output:
+
+Home_page
+
+Best_seller
+
+RegistraƟon form
