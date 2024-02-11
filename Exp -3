@@ -1,0 +1,49 @@
+3. Apply the following styles to all web pages of online book store web application.
+a. Fonts and Styles: font-family, font-style, font-weight and font-size
+b. Backgrounds and colors: color, background-color, background-image and
+background-repeat
+c. Text: text-decoration, text-transformation, text-align and text-indentation, textalign
+d. Borders: border, border-width, border-color and border-style
+e. Styles for links: A: link, A: visited, A: active, A: hover
+f. Selectors, Classes, Layers and Positioning elements.
+
+
+
+.th
+{
+font-family:"Comic Sans MS";
+font-size-adjust:0.75;
+font-weight:bolder;
+}
+p.style
+{
+font-style:oblique;
+font-weight:200;
+}
+a:link
+{
+color:green;
+font-family:"Arial";
+}
+a:visited
+{
+color:blue;
+}
+a:hover
+{
+color:pink;
+}
+a:active
+{
+color:red;
+font-family:"Palantino Linotype";
+}
+.borer
+{
+border-width:10px;
+border-color:grey grey grey red;
+border-style:solid;
+text-align: left;
+text-indent: 50px;
+text-transform: uppercase;
+}
