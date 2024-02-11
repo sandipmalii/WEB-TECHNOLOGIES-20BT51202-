@@ -1,0 +1,133 @@
+Write a JavaScript/JQuery code to validate the following fields of the
+Registration web page.
+a. First Name/Last Name - should contain only alphabets and the length
+should not be less than 8 characters.
+b. Username - It should contain combination of alphabets, numbers and
+underscore. It should not allow spaces and special symbols.
+c. Password - It should not less than 8 characters in length and it contains one
+uppercase letter and one special symbol.
+d. Date of Birth - It should allow only valid date; otherwise display a message
+stating that entered date is invalid. Ex. 29 Feb. 2009 is an invalid date.
+e. Postal Code: It must allow only 6 digit valid number.
+f. Mobile No. - It should allow only numbers and total number of digits should
+be equal to 10.
+g. e-mail id - It should allow the mail id with the following format:
+Ex. mailid@domainname.com
+Valid.html
+
+
+
+<html>
+<head>
+<title>Create a New Account</title>
+<script src="valid.js" type="text/javascript">
+</script>
+</head>
+<body bgcolor="pink">
+<div style="margin-left:400px;border:2px dashed red;width:700px;float:left;top:200px;">
+<table align="center" width="50%" border="0" cellspacing="3" cellpadding="5">
+<th align="center" colspan="2"> Fill Credentials For Validation </th>
+<tr><td align="center">First Name</td>
+<td align="center"><input type="text" id="fname" size="15"></td>
+</tr>
+<tr><td align="center">Last Name</td>
+<td align="center"><input type="text" id="lname" size="15"></td>
+</tr>
+<tr><td align="center">Date Of Birth</td>
+<td align="center"><input type="date" id="dob"></td>
+</tr>
+<tr><td align="center">UserName</td>
+<td align="center"><input type="text" id="uname" size="15"></td>
+</tr>
+<tr><td align="center">Password</td>
+<td align="center"><input type="password" id="psw" size="15"></td>
+</tr>
+<tr><td align="center">Postalcode</td>
+<td align="center"><input type="text" id="pc" size="15"></td>
+</tr>
+
+<tr><td align="center">Email-id</td>
+<td align="center"><input type="email" id="em"></td>
+</tr>
+<tr><td align="center">Phone Number</td>
+<td align="center"><input type="text" id="phno" size="15"></td>
+</tr>
+<tr><td></td>
+<td align="center"><input type="submit" onclick="validate()"></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+Valid.js
+function validate()
+{
+var f=document.getElementById("fname").value
+var l=document.getElementById("lname").value
+var u=document.getElementById("uname").value
+var p=document.getElementById("psw").value
+var po=document.getElementById("pc").value
+var mn=document.getElementById("phno").value
+var ei=document.getElementById("em").value
+var refl=/[A-Z]/
+var reu=/\w/
+var repm=/\d/
+var reei=/[a-z]@[a-z]*.com/
+if(!(!refl.test(f))||!(f.length>=8))
+{
+if(!refl.test(f))
+{
+alert("First Name should contain only CAPITAL LETTERS")
+}
+if(!(f.length>=8))
+{
+alert("Length of first name must be EIGHT")
+}
+}
+if(!(!refl.test(l))||!(l.length>=8))
+{
+if(!refl.test(l))
+{
+alert("Last Name should contain only CAPITAL LETTERS")
+}
+if(!(l.length>=8))
+{
+alert("Length of last name must be EIGHT")
+
+}
+}
+if(!reu.test(u))
+{
+alert("Username should not contain spaces or special symbols")
+}
+if(p.length<=8)
+{
+alert("To secure your account password should be EIGHT characters in length")
+}
+if(!(!repm.test(po))||!(po.length==6))
+{
+if(!repm.test(po))
+{
+alert("Postal COde contains only DIGITS")
+}
+if(!(po.length==6))
+{
+alert("Length of postal code must be SIX")
+}
+}
+if(!reei.test(ei))
+{
+alert("Please check out Your EMAIL-ID")
+}
+if(!(!repm.test(mn))||!(mn.length==6))
+{
+if(!repm.test(mn))
+{
+alert("Phone Number contains only DIGITS")
+}
+if(!(mn.length==10))
+{
+alert("Length of phone number must be TEN ")
+}
+}
+}
